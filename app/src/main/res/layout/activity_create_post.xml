@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF"
+    tools:context=".CreatePostActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/exit"
+            android:contentDescription="Thoát"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tạo bài viết"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_back"
+            app:layout_constraintBottom_toBottomOf="@id/btn_back" />
+
+        <Button
+            android:id="@+id/btn_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:backgroundTint="#1877F2"
+            android:minWidth="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_back"
+            app:layout_constraintBottom_toBottomOf="@id/btn_back" />
+        <LinearLayout
+            android:id="@+id/user_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/btn_back">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/img1"
+                android:background="@drawable/circle_shape"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nguyễn Văn A"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/privacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Công khai 🌍"
+                    android:textSize="13sp"
+                    android:textColor="#555" />
+            </LinearLayout>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/post_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Bạn đang nghĩ gì thế?"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:background="@null"
+            android:minHeight="150dp"
+            android:gravity="top"
+            app:layout_constraintTop_toBottomOf="@id/user_row"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <ImageView
+            android:id="@+id/selected_image"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:background="#EEE"
+            app:layout_constraintTop_toBottomOf="@id/post_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <LinearLayout
+            android:id="@+id/icon_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/selected_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/btn_photo"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/photo"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="Ảnh" />
+
+            <ImageView
+                android:id="@+id/btn_tag"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/tag"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="Gắn thẻ" />
+
+            <ImageView
+                android:id="@+id/btn_feeling"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/smiling"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="Cảm xúc" />
+
+            <ImageView
+                android:id="@+id/btn_checkin"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/locations"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="Vị trí" />
+
+            <ImageView
+                android:id="@+id/btn_more"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/option"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="Thêm" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,566 @@
+[
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img6.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img6.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img17.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img17.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_notifications.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\notifications.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_camera.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\camera.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_logout.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\logout.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_arrow.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_exit.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\exit.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_help.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\help.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img10.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img10.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_video.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\video.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_help.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_help.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_option.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\option.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_instagram.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\instagram.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_edittext_bg.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\edittext_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_smiling.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\smiling.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img5.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img5.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img16.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img16.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_home.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\home.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_man.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\man.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\color_nav_item_color.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\color\\nav_item_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_settings.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\settings.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_buttons_background.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\buttons_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_tag.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\tag.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_facebooklogo.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\facebooklogo.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_graduation.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\graduation.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img4.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img4.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_grandmother.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\grandmother.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\raw_sample_video.mp4.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\raw\\sample_video.mp4"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_locations.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\locations.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_comment.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_comment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_woman.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\woman.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img15.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img15.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_share.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\share.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_gif.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\gif.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_chat.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\chat.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_play.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\play.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_question.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\question.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img1.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_recycle.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\recycle.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_user.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\user.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img20.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img20.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_music.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\music.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img12.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img12.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_item_story.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\item_story.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_story_detail.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_story_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_friends.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_friends.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img7.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img7.jpg"
+    },
+    {
+        "merged": "com.example.facebook.app-debug-35:/layout_activity_reset_password.xml.flat",
+        "source": "com.example.facebook.app-main-37:/layout/activity_reset_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_create_note.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_create_note.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_search.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\search.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_notifications.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_notifications.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_angry.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\angry.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\menu_bottom_nav_messenger.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\menu\\bottom_nav_messenger.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img18.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img18.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_pen.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\pen.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_privacy.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\privacy.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\menu_post_options_menu.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\menu\\post_options_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_friend.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\friend.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img21.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img21.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_pill_background.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\pill_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_messengers.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_messengers.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_reels.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_reels.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_surprised.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\surprised.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_sad.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\sad.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_facebook.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\facebook.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_story_progress_bar.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\story_progress_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img14.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img14.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img3.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img3.jpg"
+    },
+    {
+        "merged": "com.example.facebook.app-debug-35:/layout_activity_forgot_password.xml.flat",
+        "source": "com.example.facebook.app-main-37:/layout/activity_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_reset_password.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_reset_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_circle_bg_white.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\circle_bg_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_news.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\news.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_down.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\down.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_background.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_image.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\image.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_gemini.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_gemini.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img22.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img22.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_plus.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\plus.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_bookmark.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\bookmark.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_clapper.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\clapper.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img9.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img9.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img2.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_menu.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img13.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img13.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_emoji.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\emoji.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_ai.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\ai.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_forgot_password.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img19.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img19.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_love.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\love.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_qrcode.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\qrcode.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_item_post.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\item_post.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_saved_posts.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_saved_posts.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_edit.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\edit.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_notes.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\notes.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_circle_shape.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\circle_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_create_film.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_create_film.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_comments.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\comments.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_messenger.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\messenger.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img8.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img8.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_search.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_profile.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\profile.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_white.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\white.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_button_background.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\button_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_send.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\send.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_like.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\like.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_reel.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\reel.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_img11.jpg.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img11.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_friends.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\friends.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_create_post.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_create_post.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_boy.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\boy.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_more.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\more.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_privacy.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_privacy.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_photo.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\photo.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_create_story.xml.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_create_story.xml"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_menu.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\menu.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_feed.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\feed.png"
+    },
+    {
+        "merged": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_location.png.flat",
+        "source": "C:\\Users\\ptd33\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\location.png"
+    }
+]

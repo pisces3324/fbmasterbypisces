@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="180dp"
+    android:layout_marginEnd="8dp"
+    android:background="@drawable/edittext_bg">
+
+    <ImageView
+        android:id="@+id/storyImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true"
+        android:background="@drawable/edittext_bg"/>
+
+    <ImageView
+        android:id="@+id/plusIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:src="@drawable/plus"
+        android:background="@drawable/circle_bg_white"
+        android:padding="4dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/storyUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+</FrameLayout>

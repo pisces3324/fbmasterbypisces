@@ -1,0 +1,1429 @@
+Index: app/src/main/java/com/example/facebook/StoryActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/facebook/StoryActivity.java b/app/src/main/java/com/example/facebook/StoryActivity.java
+new file mode 100644
+--- /dev/null	(date 1760624926527)
++++ b/app/src/main/java/com/example/facebook/StoryActivity.java	(date 1760624926527)
+@@ -0,0 +1,53 @@
++package com.example.facebook;
++
++import android.os.Bundle;
++import android.os.Handler;
++import android.view.View;
++import android.widget.ImageView;
++import android.widget.ProgressBar;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++public class StoryActivity extends AppCompatActivity {
++
++    ProgressBar storyProgress;
++    ImageView btnClose;
++
++    private Handler handler = new Handler();
++    private int progressStatus = 0;
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_story);
++
++
++        getWindow().getDecorView().setSystemUiVisibility(
++                View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
++        );
++
++        storyProgress = findViewById(R.id.storyProgress);
++        btnClose = findViewById(R.id.btn_close);
++
++        btnClose.setOnClickListener(v -> finish());
++
++        startStoryTimer();
++    }
++
++    private void startStoryTimer() {
++        progressStatus = 0;
++        new Thread(() -> {
++            while (progressStatus < 100) {
++                progressStatus += 1;
++                handler.post(() -> storyProgress.setProgress(progressStatus));
++
++                try {
++                    Thread.sleep(50);
++                } catch (InterruptedException e) {
++                    e.printStackTrace();
++                }
++            }
++            finish();
++        }).start();
++    }
++}
+Index: app/src/main/res/layout/activity_story.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_story.xml b/app/src/main/res/layout/activity_story.xml
+new file mode 100644
+--- /dev/null	(date 1760624926557)
++++ b/app/src/main/res/layout/activity_story.xml	(date 1760624926557)
+@@ -0,0 +1,127 @@
++<?xml version="1.0" encoding="utf-8"?>
++<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="#000">
++
++
++    <ImageView
++        android:id="@+id/storyImage"
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:scaleType="centerCrop"
++        android:src="@drawable/profile" />
++
++
++    <ProgressBar
++        android:id="@+id/storyProgress"
++        style="?android:attr/progressBarStyleHorizontal"
++        android:layout_width="match_parent"
++        android:layout_height="4dp"
++        android:layout_marginTop="40dp"
++        android:progress="0"
++        android:max="100"
++        android:progressDrawable="@drawable/story_progress_bar" />
++
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:orientation="horizontal"
++        android:gravity="center_vertical"
++        android:layout_marginTop="50dp"
++        android:padding="12dp">
++
++        <ImageView
++            android:layout_width="36dp"
++            android:layout_height="36dp"
++            android:src="@drawable/profile"
++            android:scaleType="centerCrop"
++            android:background="@drawable/button_background" />
++
++        <TextView
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:text="Nguyễn Văn A"
++            android:textColor="#FFF"
++            android:textStyle="bold"
++            android:textSize="16sp"
++            android:layout_marginStart="10dp" />
++
++        <TextView
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:text="• 5 giờ"
++            android:textColor="#DDD"
++            android:textSize="12sp"
++            android:layout_marginStart="8dp" />
++
++        <ImageView
++            android:id="@+id/btn_close"
++            android:layout_width="30dp"
++            android:layout_height="30dp"
++            android:src="@drawable/exit"
++            android:layout_gravity="end"
++            android:layout_marginStart="130dp"
++            android:backgroundTint="#FFF" />
++    </LinearLayout>
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:orientation="horizontal"
++        android:layout_marginTop="650dp">
++        <ImageView
++            android:layout_width="40dp"
++            android:layout_height="40dp"
++            android:background="@drawable/plus"></ImageView>
++
++        <EditText
++            android:layout_marginLeft="10dp"
++            android:layout_width="230dp"
++            android:layout_height="40dp"
++            android:background="@drawable/button_background"
++            android:text="Gửi tin nhắn..."
++            android:textColor="@color/black"
++            android:textSize="18dp"></EditText>
++        <ImageView
++            android:layout_marginLeft="10dp"
++            android:layout_width="40dp"
++            android:layout_height="40dp"
++            android:background="@drawable/love"></ImageView>
++        <ImageView
++            android:layout_marginLeft="10dp"
++            android:layout_width="40dp"
++            android:layout_height="40dp"
++            android:background="@drawable/like"></ImageView>
++        <ImageView
++            android:layout_marginLeft="10dp"
++            android:layout_width="40dp"
++            android:layout_height="40dp"
++            android:background="@drawable/smiling"></ImageView>
++        <ImageView
++            android:layout_marginLeft="10dp"
++            android:layout_width="40dp"
++            android:layout_height="40dp"
++            android:background="@drawable/emoji"></ImageView>
++        <ImageView
++            android:layout_marginLeft="10dp"
++            android:layout_width="40dp"
++            android:layout_height="40dp"
++            android:background="@drawable/surprised"></ImageView>
++        <ImageView
++            android:layout_marginLeft="10dp"
++            android:layout_width="40dp"
++            android:layout_height="40dp"
++            android:background="@drawable/sad"></ImageView>
++        <ImageView
++            android:layout_marginLeft="10dp"
++            android:layout_width="40dp"
++            android:layout_height="40dp"
++            android:background="@drawable/angry"></ImageView>
++
++
++
++    </LinearLayout>
++
++</FrameLayout>
+Index: app/src/main/res/drawable/story_progress_bar.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/story_progress_bar.xml b/app/src/main/res/drawable/story_progress_bar.xml
+new file mode 100644
+--- /dev/null	(date 1760624926545)
++++ b/app/src/main/res/drawable/story_progress_bar.xml	(date 1760624926545)
+@@ -0,0 +1,15 @@
++<?xml version="1.0" encoding="utf-8"?>
++<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
++    <item android:id="@android:id/background">
++        <shape android:shape="rectangle">
++            <solid android:color="#33FFFFFF" />
++        </shape>
++    </item>
++    <item android:id="@android:id/progress">
++        <clip>
++            <shape android:shape="rectangle">
++                <solid android:color="#FFFFFF" />
++            </shape>
++        </clip>
++    </item>
++</layer-list>
+Index: app/src/main/java/com/example/facebook/CreateFilmActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/facebook/CreateFilmActivity.java b/app/src/main/java/com/example/facebook/CreateFilmActivity.java
+new file mode 100644
+--- /dev/null	(date 1760624926518)
++++ b/app/src/main/java/com/example/facebook/CreateFilmActivity.java	(date 1760624926518)
+@@ -0,0 +1,101 @@
++package com.example.facebook;
++
++import android.Manifest;
++import android.content.Intent;
++import android.content.pm.PackageManager;
++import android.net.Uri;
++import android.os.Bundle;
++import android.provider.MediaStore;
++import android.widget.ImageView;
++import android.widget.LinearLayout;
++import android.widget.Toast;
++
++import androidx.annotation.Nullable;
++import androidx.appcompat.app.AppCompatActivity;
++import androidx.core.app.ActivityCompat;
++import androidx.core.content.ContextCompat;
++
++public class CreateFilmActivity extends AppCompatActivity {
++
++    private static final int REQUEST_VIDEO_CAPTURE = 1;
++    private static final int REQUEST_PICK_VIDEO = 2;
++    private static final int REQUEST_PERMISSION = 100;
++
++    ImageView btnExit, imgSetting;
++    LinearLayout cameraLayout, musicLayout, sampleLayout, savedLayout,
++            draftLayout, effectLayout, greenScreenLayout;
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_create_film);
++
++        btnExit = findViewById(R.id.btn_exit);
++        imgSetting = findViewById(R.id.imgsetting);
++
++        cameraLayout = findViewById(R.id.cameraLayout);
++        musicLayout = findViewById(R.id.musicLayout);
++        sampleLayout = findViewById(R.id.sampleLayout);
++        savedLayout = findViewById(R.id.savedLayout);
++        draftLayout = findViewById(R.id.draftLayout);
++        effectLayout = findViewById(R.id.effectLayout);
++        greenScreenLayout = findViewById(R.id.greenScreenLayout);
++
++        btnExit.setOnClickListener(v -> finish());
++
++        imgSetting.setOnClickListener(v ->
++                Toast.makeText(this, "Mở cài đặt thước phim", Toast.LENGTH_SHORT).show()
++        );
++        cameraLayout.setOnClickListener(v -> openCamera());
++        musicLayout.setOnClickListener(v ->
++                Toast.makeText(this, "Mở thư viện nhạc", Toast.LENGTH_SHORT).show()
++        );
++        sampleLayout.setOnClickListener(v ->
++                Toast.makeText(this, "Chọn mẫu thước phim", Toast.LENGTH_SHORT).show()
++        );
++        savedLayout.setOnClickListener(v ->
++                Toast.makeText(this, "Mở danh sách thước phim đã lưu", Toast.LENGTH_SHORT).show()
++        );
++        draftLayout.setOnClickListener(v ->
++                Toast.makeText(this, "Mở bản nháp thước phim", Toast.LENGTH_SHORT).show()
++        );
++        effectLayout.setOnClickListener(v ->
++                Toast.makeText(this, "Chọn hiệu ứng quay phim", Toast.LENGTH_SHORT).show()
++        );
++        greenScreenLayout.setOnClickListener(v ->
++                Toast.makeText(this, "Bật chế độ phông xanh", Toast.LENGTH_SHORT).show()
++        );
++        checkPermissions();
++    }
++    private void checkPermissions() {
++        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
++                != PackageManager.PERMISSION_GRANTED ||
++                ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE)
++                        != PackageManager.PERMISSION_GRANTED) {
++
++            ActivityCompat.requestPermissions(this,
++                    new String[]{Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE},
++                    REQUEST_PERMISSION);
++        }
++    }
++    private void openCamera() {
++        Intent intent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
++        if (intent.resolveActivity(getPackageManager()) != null) {
++            startActivityForResult(intent, REQUEST_VIDEO_CAPTURE);
++        } else {
++            Toast.makeText(this, "Không thể mở camera", Toast.LENGTH_SHORT).show();
++        }
++    }
++    @Override
++    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
++        super.onActivityResult(requestCode, resultCode, data);
++
++        if (requestCode == REQUEST_VIDEO_CAPTURE && resultCode == RESULT_OK && data != null) {
++            Uri videoUri = data.getData();
++            Toast.makeText(this, "Đã quay xong video: " + videoUri, Toast.LENGTH_SHORT).show();
++        } else if (requestCode == REQUEST_PICK_VIDEO && resultCode == RESULT_OK && data != null) {
++            Uri selectedVideoUri = data.getData();
++            Toast.makeText(this, "Đã chọn video: " + selectedVideoUri, Toast.LENGTH_SHORT).show();
++        }
++    }
++}
+Index: app/src/main/res/layout/activity_create_film.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_create_film.xml b/app/src/main/res/layout/activity_create_film.xml
+new file mode 100644
+--- /dev/null	(date 1760624926550)
++++ b/app/src/main/res/layout/activity_create_film.xml	(date 1760624926550)
+@@ -0,0 +1,267 @@
++<?xml version="1.0" encoding="utf-8"?>
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="#FFFFFF"
++    android:orientation="vertical"
++    android:padding="12dp">
++
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:gravity="center_vertical"
++        android:orientation="horizontal">
++
++        <ImageView
++            android:id="@+id/btn_exit"
++            android:layout_width="30dp"
++            android:layout_height="30dp"
++            android:src="@drawable/exit"
++            android:contentDescription="Thoát" />
++
++        <TextView
++            android:layout_width="0dp"
++            android:layout_height="wrap_content"
++            android:layout_weight="1"
++            android:text="Tạo thước phim"
++            android:textAlignment="center"
++            android:textColor="#000"
++            android:textSize="18sp"
++            android:textStyle="bold" />
++
++        <ImageView
++            android:id="@+id/imgsetting"
++            android:layout_width="30dp"
++            android:layout_height="30dp"
++            android:src="@drawable/settings"
++            android:layout_marginEnd="8dp"
++            android:contentDescription="Camera" />
++
++
++    </LinearLayout>
++
++
++    <HorizontalScrollView
++        android:layout_marginTop="12dp"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:scrollbars="none">
++
++        <LinearLayout
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:orientation="horizontal">
++
++            <LinearLayout
++                android:id="@+id/cameraLayout"
++                android:layout_marginStart="10dp"
++                android:layout_width="100dp"
++                android:layout_height="70dp"
++                android:orientation="vertical"
++
++                android:gravity="center">
++
++                <ImageView
++
++                    android:layout_width="28dp"
++                    android:layout_height="28dp"
++                    android:src="@drawable/camera"
++                    android:layout_gravity="center" />
++
++                <TextView
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:text="Camera"
++                    android:textSize="12sp"
++                    android:textColor="#000" />
++            </LinearLayout>
++
++
++
++
++            <LinearLayout
++                android:id="@+id/musicLayout"
++                android:layout_marginStart="10dp"
++                android:layout_width="100dp"
++                android:layout_height="70dp"
++                android:orientation="vertical"
++                android:gravity="center">
++
++                <ImageView
++                    android:layout_width="28dp"
++                    android:layout_height="28dp"
++                    android:src="@drawable/music"
++                    android:layout_gravity="center" />
++
++                <TextView
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:text="Music"
++                    android:textSize="12sp"
++                    android:textColor="#000" />
++            </LinearLayout>
++
++
++
++
++            <LinearLayout
++                android:id="@+id/sampleLayout"
++                android:layout_marginStart="10dp"
++                android:layout_width="100dp"
++                android:layout_height="70dp"
++                android:orientation="vertical"
++                android:gravity="center">
++
++                <ImageView
++                    android:layout_width="28dp"
++                    android:layout_height="28dp"
++                    android:src="@drawable/plus"
++                    android:layout_gravity="center" />
++
++                <TextView
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:text="Mẫu"
++                    android:textSize="12sp"
++                    android:textColor="#000" />
++            </LinearLayout>
++
++            <LinearLayout
++                android:id="@+id/savedLayout"
++                android:layout_marginStart="10dp"
++                android:layout_width="100dp"
++                android:layout_height="70dp"
++                android:orientation="vertical"
++                android:gravity="center">
++
++                <ImageView
++                    android:layout_width="28dp"
++                    android:layout_height="28dp"
++                    android:src="@drawable/bookmark"
++                    android:layout_gravity="center" />
++
++                <TextView
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:text="Đã lưu"
++                    android:textSize="12sp"
++                    android:textColor="#000" />
++            </LinearLayout>
++            <LinearLayout
++                android:id="@+id/draftLayout"
++                android:layout_marginStart="10dp"
++                android:layout_width="100dp"
++                android:layout_height="70dp"
++                android:orientation="vertical"
++                android:gravity="center">
++
++                <ImageView
++                    android:layout_width="28dp"
++                    android:layout_height="28dp"
++                    android:src="@drawable/notes"
++                    android:layout_gravity="center" />
++
++                <TextView
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:text="Bản nháp"
++                    android:textSize="12sp"
++                    android:textColor="#000" />
++            </LinearLayout>
++            <LinearLayout
++                android:id="@+id/effectLayout"
++                android:layout_marginStart="10dp"
++                android:layout_width="100dp"
++                android:layout_height="70dp"
++                android:orientation="vertical"
++                android:gravity="center">
++
++                <ImageView
++                    android:layout_width="28dp"
++                    android:layout_height="28dp"
++                    android:src="@drawable/ai"
++                    android:layout_gravity="center" />
++
++                <TextView
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:text="Hiệu ứng"
++                    android:textSize="12sp"
++                    android:textColor="#000" />
++            </LinearLayout>
++
++            <LinearLayout
++                android:id="@+id/greenScreenLayout"
++                android:layout_marginStart="10dp"
++                android:layout_width="100dp"
++                android:layout_height="70dp"
++                android:orientation="vertical"
++                android:gravity="center">
++
++                <ImageView
++                    android:layout_width="28dp"
++                    android:layout_height="28dp"
++                    android:src="@drawable/user"
++                    android:layout_gravity="center" />
++
++                <TextView
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:text="Phông xanh"
++                    android:textSize="12sp"
++                    android:textColor="#000" />
++            </LinearLayout>
++
++
++
++        </LinearLayout>
++    </HorizontalScrollView>
++
++
++    <LinearLayout
++        android:layout_marginTop="14dp"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:gravity="center_vertical"
++        android:orientation="horizontal">
++
++        <TextView
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:text="Thư viện ảnh"
++            android:textColor="#000"
++            android:textStyle="bold"
++            android:textSize="15sp" />
++
++        <ImageView
++            android:layout_marginStart="6dp"
++            android:layout_width="18dp"
++            android:layout_height="18dp"
++            android:src="@drawable/down" />
++
++        <LinearLayout
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="12dp"
++            android:orientation="horizontal"
++            android:layout_gravity="end">
++
++            <ImageView
++                android:layout_marginStart="150dp"
++                android:layout_width="18dp"
++                android:layout_height="18dp"
++                android:src="@drawable/image" />
++
++            <TextView
++                android:layout_marginStart="4dp"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="Chọn nhiều file"
++                android:textColor="#000"
++                android:textStyle="bold"
++                android:textSize="13sp" />
++        </LinearLayout>
++    </LinearLayout>
++
++</LinearLayout>
+Index: app/src/main/java/com/example/facebook/GeminiActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/facebook/GeminiActivity.java b/app/src/main/java/com/example/facebook/GeminiActivity.java
+new file mode 100644
+--- /dev/null	(date 1760624926522)
++++ b/app/src/main/java/com/example/facebook/GeminiActivity.java	(date 1760624926522)
+@@ -0,0 +1,30 @@
++package com.example.facebook;
++
++import android.os.Bundle;
++import android.webkit.WebSettings;
++import android.webkit.WebView;
++import android.webkit.WebViewClient;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++public class GeminiActivity extends AppCompatActivity {
++
++    private WebView webView;
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_gemini);
++
++        webView = findViewById(R.id.webView);
++        WebSettings webSettings = webView.getSettings();
++        webSettings.setJavaScriptEnabled(true);
++        webSettings.setDomStorageEnabled(true);
++        webSettings.setLoadWithOverviewMode(true);
++        webSettings.setUseWideViewPort(true);
++
++
++        webView.setWebViewClient(new WebViewClient());
++        webView.loadUrl("https://gemini.google.com/");
++    }
++}
+Index: app/src/main/res/layout/activity_gemini.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_gemini.xml b/app/src/main/res/layout/activity_gemini.xml
+new file mode 100644
+--- /dev/null	(date 1760624926554)
++++ b/app/src/main/res/layout/activity_gemini.xml	(date 1760624926554)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="utf-8"?>
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:orientation="vertical">
++
++    <WebView
++        android:id="@+id/webView"
++        android:layout_width="match_parent"
++        android:layout_height="match_parent" />
++</LinearLayout>
+Index: app/src/main/java/com/example/facebook/CreateNoteActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/facebook/CreateNoteActivity.java b/app/src/main/java/com/example/facebook/CreateNoteActivity.java
+new file mode 100644
+--- /dev/null	(date 1760624926519)
++++ b/app/src/main/java/com/example/facebook/CreateNoteActivity.java	(date 1760624926519)
+@@ -0,0 +1,68 @@
++package com.example.facebook; // ⚠️ Đổi thành package của bạn
++
++import android.os.Bundle;
++import android.text.Editable;
++import android.text.TextWatcher;
++import android.widget.EditText;
++import android.widget.ImageView;
++import android.widget.TextView;
++import android.widget.Toast;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++public class CreateNoteActivity extends AppCompatActivity {
++
++    private EditText textName;
++    private TextView textCount;
++    private ImageView btnBack, btnMusic, btnSmile;
++    private TextView btnSave;
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_create_note);
++
++
++        btnBack = findViewById(R.id.btn_back);
++        btnSave = findViewById(R.id.btn_save);
++        textName = findViewById(R.id.textName);
++        textCount = findViewById(R.id.textCount);
++        btnMusic = findViewById(R.id.btn_music);
++        btnSmile = findViewById(R.id.btn_smile);
++
++
++        btnBack.setOnClickListener(v -> finish());
++
++
++        textName.addTextChangedListener(new TextWatcher() {
++            @Override
++            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
++
++            @Override
++            public void onTextChanged(CharSequence s, int start, int before, int count) {
++
++                textCount.setText(s.length() + "/60");
++            }
++
++            @Override
++            public void afterTextChanged(Editable s) {}
++        });
++
++
++        btnSave.setOnClickListener(v -> {
++            String content = textName.getText().toString().trim();
++            if (content.isEmpty()) {
++                Toast.makeText(this, "Vui lòng nhập nội dung ghi chú!", Toast.LENGTH_SHORT).show();
++            } else {
++                Toast.makeText(this, "Đã chia sẻ ghi chú!", Toast.LENGTH_SHORT).show();
++                finish();
++            }
++        });
++        btnMusic.setOnClickListener(v ->
++                Toast.makeText(this, "Chức năng thêm nhạc sẽ có sau!", Toast.LENGTH_SHORT).show()
++        );
++        btnSmile.setOnClickListener(v ->
++                Toast.makeText(this, "Chức năng thêm cảm xúc sắp có!", Toast.LENGTH_SHORT).show()
++        );
++    }
++}
+Index: app/src/main/res/menu/post_options_menu.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/menu/post_options_menu.xml b/app/src/main/res/menu/post_options_menu.xml
+new file mode 100644
+--- /dev/null	(date 1760624926559)
++++ b/app/src/main/res/menu/post_options_menu.xml	(date 1760624926559)
+@@ -0,0 +1,27 @@
++<?xml version="1.0" encoding="utf-8"?>
++<menu xmlns:android="http://schemas.android.com/apk/res/android">
++    <item
++        android:id="@+id/action_post"
++        android:icon="@drawable/edit"
++        android:title="Bài viết" />
++    <item
++        android:id="@+id/action_news"
++        android:icon="@drawable/news"
++        android:title="Tin" />
++    <item
++        android:id="@+id/action_film"
++        android:icon="@drawable/video"
++        android:title="Thước phim" />
++    <item
++        android:id="@+id/action_live"
++        android:icon="@drawable/play"
++        android:title="Phát trực tiếp" />
++    <item
++        android:id="@+id/action_note"
++        android:icon="@drawable/notes"
++        android:title="Ghi chú" />
++    <item
++        android:id="@+id/action_ai"
++        android:icon="@drawable/ai"
++        android:title="AI" />
++</menu>
+Index: app/src/main/res/layout/activity_create_note.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_create_note.xml b/app/src/main/res/layout/activity_create_note.xml
+new file mode 100644
+--- /dev/null	(date 1760624926551)
++++ b/app/src/main/res/layout/activity_create_note.xml	(date 1760624926551)
+@@ -0,0 +1,109 @@
++<?xml version="1.0" encoding="utf-8"?>
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:orientation="vertical"
++    android:background="#FFFFFF"
++    android:padding="16dp"
++    tools:context=".CreateNoteActivity">
++
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:orientation="horizontal"
++        android:gravity="center_vertical">
++
++        <ImageView
++            android:id="@+id/btn_back"
++            android:layout_width="28dp"
++            android:layout_height="28dp"
++            android:src="@drawable/exit"
++            android:contentDescription="Quay lại" />
++
++        <TextView
++            android:layout_width="0dp"
++            android:layout_height="wrap_content"
++            android:layout_weight="1"
++            android:text="Ghi chú mới"
++            android:textAlignment="center"
++            android:textSize="18sp"
++            android:textStyle="bold"
++            android:textColor="#000" />
++
++        <TextView
++            android:id="@+id/btn_save"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:text="Chia sẻ"
++            android:textColor="#1976D2"
++            android:textSize="16sp" />
++    </LinearLayout>
++
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="0dp"
++        android:layout_weight="1"
++        android:orientation="vertical"
++        android:gravity="center_horizontal"
++        android:layout_marginTop="60dp">
++
++
++        <ImageView
++            android:id="@+id/image_user"
++            android:layout_width="100dp"
++            android:layout_height="100dp"
++            android:src="@drawable/user"
++            android:layout_marginBottom="20dp"
++            android:contentDescription="Ảnh người dùng" />
++
++
++        <EditText
++            android:id="@+id/textName"
++            android:layout_width="250dp"
++            android:layout_height="wrap_content"
++            android:hint="Chia sẻ suy nghĩ..."
++            android:textColor="@android:color/black"
++            android:textSize="18sp"
++            android:gravity="center"
++            android:background="@drawable/edittext_bg" />
++
++
++        <TextView
++            android:id="@+id/textCount"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:text="0/60"
++            android:textSize="16sp"
++            android:textColor="#999999"
++            android:layout_marginTop="12dp" />
++
++
++        <LinearLayout
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:orientation="horizontal"
++            android:layout_marginTop="24dp"
++            android:gravity="center">
++
++            <ImageView
++                android:id="@+id/btn_music"
++                android:layout_width="40dp"
++                android:layout_height="40dp"
++                android:src="@drawable/music"
++                android:contentDescription="Nhạc"
++                android:layout_marginEnd="20dp" />
++
++            <ImageView
++                android:id="@+id/btn_smile"
++                android:layout_width="40dp"
++                android:layout_height="40dp"
++                android:src="@drawable/smiling"
++                android:contentDescription="Cảm xúc" />
++        </LinearLayout>
++    </LinearLayout>
++
++</LinearLayout>
+Index: app/src/main/java/com/example/facebook/CreatePostActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/facebook/CreatePostActivity.java b/app/src/main/java/com/example/facebook/CreatePostActivity.java
+new file mode 100644
+--- /dev/null	(date 1760624926520)
++++ b/app/src/main/java/com/example/facebook/CreatePostActivity.java	(date 1760624926520)
+@@ -0,0 +1,71 @@
++package com.example.facebook;
++
++import androidx.annotation.Nullable;
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.content.Intent;
++import android.graphics.Bitmap;
++import android.net.Uri;
++import android.os.Bundle;
++import android.provider.MediaStore;
++import android.view.View;
++import android.widget.*;
++
++import java.io.IOException;
++
++public class CreatePostActivity extends AppCompatActivity {
++
++    private EditText postContent;
++    private ImageView selectedImage;
++    private static final int PICK_IMAGE_REQUEST = 1;
++    private Uri imageUri;
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_create_post);
++
++        postContent = findViewById(R.id.post_content);
++        selectedImage = findViewById(R.id.selected_image);
++        ImageView btnPhoto = findViewById(R.id.btn_photo);
++        Button btnPost = findViewById(R.id.btn_post);
++        ImageView btnBack = findViewById(R.id.btn_back);
++
++
++        btnPhoto.setOnClickListener(v -> openImagePicker());
++
++
++        btnPost.setOnClickListener(v -> {
++            String content = postContent.getText().toString().trim();
++            if (content.isEmpty() && imageUri == null) {
++                Toast.makeText(this, "Hãy viết gì đó hoặc chọn ảnh!", Toast.LENGTH_SHORT).show();
++                return;
++            }
++            Toast.makeText(this, "Đăng bài thành công", Toast.LENGTH_SHORT).show();
++            finish();
++        });
++
++
++        btnBack.setOnClickListener(v -> finish());
++    }
++
++    private void openImagePicker() {
++        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
++        startActivityForResult(intent, PICK_IMAGE_REQUEST);
++    }
++
++    @Override
++    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
++        super.onActivityResult(requestCode, resultCode, data);
++        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null) {
++            imageUri = data.getData();
++            try {
++                Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), imageUri);
++                selectedImage.setImageBitmap(bitmap);
++                selectedImage.setVisibility(View.VISIBLE);
++            } catch (IOException e) {
++                e.printStackTrace();
++            }
++        }
++    }
++}
+Index: app/src/main/java/com/example/facebook/LiveStreamActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/facebook/LiveStreamActivity.java b/app/src/main/java/com/example/facebook/LiveStreamActivity.java
+new file mode 100644
+--- /dev/null	(date 1760624926524)
++++ b/app/src/main/java/com/example/facebook/LiveStreamActivity.java	(date 1760624926524)
+@@ -0,0 +1,54 @@
++package com.example.facebook;
++
++import android.Manifest;
++import android.content.pm.PackageManager;
++import android.os.Bundle;
++import android.widget.Toast;
++import androidx.appcompat.app.AppCompatActivity;
++import androidx.core.app.ActivityCompat;
++import androidx.core.content.ContextCompat;
++import android.view.SurfaceView;
++import android.view.ViewGroup;
++import android.widget.FrameLayout;
++
++public class LiveStreamActivity extends AppCompatActivity {
++
++    private SurfaceView cameraView;
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++
++        cameraView = new SurfaceView(this);
++        setContentView(cameraView);
++
++        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
++                != PackageManager.PERMISSION_GRANTED ||
++                ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO)
++                        != PackageManager.PERMISSION_GRANTED) {
++
++            ActivityCompat.requestPermissions(this,
++                    new String[]{Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO},
++                    100);
++        } else {
++            startCameraPreview();
++        }
++    }
++
++    private void startCameraPreview() {
++
++        Toast.makeText(this, "Đang mở camera...", Toast.LENGTH_SHORT).show();
++    }
++
++    @Override
++    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
++        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
++        if (requestCode == 100 &&
++                grantResults.length > 0 &&
++                grantResults[0] == PackageManager.PERMISSION_GRANTED) {
++            startCameraPreview();
++        } else {
++            Toast.makeText(this, "Cần quyền camera & micro để phát trực tiếp!", Toast.LENGTH_LONG).show();
++        }
++    }
++}
+Index: app/src/main/java/com/example/facebook/CreateStoryActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/facebook/CreateStoryActivity.java b/app/src/main/java/com/example/facebook/CreateStoryActivity.java
+new file mode 100644
+--- /dev/null	(date 1760624926521)
++++ b/app/src/main/java/com/example/facebook/CreateStoryActivity.java	(date 1760624926521)
+@@ -0,0 +1,24 @@
++package com.example.facebook;
++
++import android.os.Bundle;
++import android.widget.ImageView;
++import android.widget.Toast;
++import androidx.appcompat.app.AppCompatActivity;
++
++public class CreateStoryActivity extends AppCompatActivity {
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_create_story);
++
++        ImageView btnExit = findViewById(R.id.btn_exit);
++        ImageView btnCamera = findViewById(R.id.btn_camera);
++        ImageView btnUser = findViewById(R.id.btn_user);
++
++        btnExit.setOnClickListener(v -> finish());
++        btnCamera.setOnClickListener(v ->
++                Toast.makeText(this, "Mở camera", Toast.LENGTH_SHORT).show());
++        btnUser.setOnClickListener(v ->
++                Toast.makeText(this, "Trang cá nhân", Toast.LENGTH_SHORT).show());
++    }
++}
+Index: app/src/main/res/layout/activity_create_post.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_create_post.xml b/app/src/main/res/layout/activity_create_post.xml
+new file mode 100644
+--- /dev/null	(date 1760624926552)
++++ b/app/src/main/res/layout/activity_create_post.xml	(date 1760624926552)
+@@ -0,0 +1,148 @@
++<?xml version="1.0" encoding="utf-8"?>
++<LinearLayout
++    xmlns:android="http://schemas.android.com/apk/res/android"
++    android:orientation="vertical"
++    android:background="#FFFFFF"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:padding="12dp">
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:orientation="horizontal"
++        android:gravity="center_vertical">
++
++        <ImageView
++            android:id="@+id/btn_back"
++            android:layout_width="28dp"
++            android:layout_height="28dp"
++            android:src="@drawable/exit"
++            android:contentDescription="Thoát" />
++
++        <TextView
++            android:layout_marginStart="120dp"
++            android:text="Tạo bài viết"
++            android:textSize="18sp"
++            android:textStyle="bold"
++            android:textColor="#000"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content" />
++
++        <Button
++            android:id="@+id/btn_post"
++            android:text="Đăng"
++            android:textStyle="bold"
++            android:textColor="#FFF"
++            android:layout_width="90dp"
++            android:layout_height="40dp"
++            android:backgroundTint="#1877F2"
++            android:layout_marginStart="50dp"/>
++    </LinearLayout>
++
++    <!-- Dòng người dùng -->
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_marginTop="10dp"
++        android:orientation="horizontal"
++        android:gravity="center_vertical">
++
++        <ImageView
++            android:id="@+id/profile_image"
++            android:layout_width="45dp"
++            android:layout_height="45dp"
++            android:src="@drawable/user"
++            android:background="@drawable/edittext_bg"
++            android:padding="2dp"/>
++
++        <LinearLayout
++            android:orientation="vertical"
++            android:layout_marginStart="10dp"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content">
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:id="@+id/username"
++                android:text="Nguyễn Văn A"
++                android:textStyle="bold"
++                android:textSize="16sp"
++                android:textColor="#000"/>
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:id="@+id/privacy"
++                android:text="Công khai 🌍"
++                android:textSize="13sp"
++                android:textColor="#555"/>
++        </LinearLayout>
++    </LinearLayout>
++
++    <EditText
++        android:id="@+id/post_content"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:hint="Bạn đang nghĩ gì thế?"
++        android:textSize="16sp"
++        android:textColor="#000"
++        android:background="@null"
++        android:layout_marginTop="10dp"
++        android:minHeight="150dp"
++        android:gravity="top"/>
++
++
++    <ImageView
++        android:id="@+id/selected_image"
++        android:layout_width="match_parent"
++        android:layout_height="200dp"
++        android:layout_marginTop="10dp"
++        android:scaleType="centerCrop"
++        android:visibility="gone"
++        android:background="#EEE"/>
++
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_marginTop="10dp"
++        android:orientation="horizontal"
++        android:gravity="center_horizontal">
++
++        <ImageView
++            android:id="@+id/btn_photo"
++            android:layout_width="32dp"
++            android:layout_height="32dp"
++            android:src="@drawable/photo"
++            android:contentDescription="Ảnh"/>
++
++        <ImageView
++            android:id="@+id/btn_tag"
++            android:layout_width="32dp"
++            android:layout_height="32dp"
++            android:src="@drawable/tag"
++            android:contentDescription="Gắn thẻ"/>
++
++        <ImageView
++            android:id="@+id/btn_feeling"
++            android:layout_width="32dp"
++            android:layout_height="32dp"
++            android:src="@drawable/smiling"
++            android:contentDescription="Cảm xúc"/>
++
++        <ImageView
++            android:id="@+id/btn_checkin"
++            android:layout_width="32dp"
++            android:layout_height="32dp"
++            android:src="@drawable/locations"
++            android:contentDescription="Vị trí"/>
++
++        <ImageView
++            android:id="@+id/btn_more"
++            android:layout_width="32dp"
++            android:layout_height="32dp"
++            android:src="@drawable/option"
++            android:contentDescription="Thêm"/>
++    </LinearLayout>
++
++</LinearLayout>
+Index: app/src/main/res/layout/activity_create_story.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_create_story.xml b/app/src/main/res/layout/activity_create_story.xml
+new file mode 100644
+--- /dev/null	(date 1760624926553)
++++ b/app/src/main/res/layout/activity_create_story.xml	(date 1760624926553)
+@@ -0,0 +1,174 @@
++<?xml version="1.0" encoding="utf-8"?>
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="#FFFFFF"
++    android:orientation="vertical"
++    android:padding="12dp">
++
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:gravity="center_vertical"
++        android:orientation="horizontal">
++
++        <ImageView
++            android:id="@+id/btn_exit"
++            android:layout_width="30dp"
++            android:layout_height="30dp"
++            android:src="@drawable/exit"
++            android:contentDescription="Thoát" />
++
++        <TextView
++            android:layout_width="0dp"
++            android:layout_height="wrap_content"
++            android:layout_weight="1"
++            android:text="Tạo tin"
++            android:textAlignment="center"
++            android:textColor="#000"
++            android:textSize="18sp"
++            android:textStyle="bold" />
++
++        <ImageView
++            android:id="@+id/btn_camera"
++            android:layout_width="30dp"
++            android:layout_height="30dp"
++            android:src="@drawable/camera"
++            android:layout_marginEnd="8dp"
++            android:contentDescription="Camera" />
++
++        <ImageView
++            android:id="@+id/btn_user"
++            android:layout_width="30dp"
++            android:layout_height="30dp"
++            android:src="@drawable/user"
++            android:contentDescription="Người dùng" />
++    </LinearLayout>
++
++
++    <HorizontalScrollView
++        android:layout_marginTop="12dp"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:scrollbars="none">
++
++        <LinearLayout
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:orientation="horizontal">
++
++            <TextView
++                android:layout_width="100dp"
++                android:layout_height="70dp"
++                android:gravity="center"
++                android:background="@drawable/edittext_bg"
++                android:text="Aa\nVăn bản"
++                android:textSize="14sp"
++                android:textColor="#000"
++                android:padding="6dp" />
++
++            <TextView
++                android:layout_marginStart="10dp"
++                android:layout_width="100dp"
++                android:layout_height="70dp"
++                android:gravity="center"
++                android:background="@drawable/edittext_bg"
++                android:text="🎵\nNhạc"
++                android:textSize="14sp" />
++
++            <TextView
++                android:layout_marginStart="10dp"
++                android:layout_width="100dp"
++                android:layout_height="70dp"
++                android:gravity="center"
++                android:background="@drawable/edittext_bg"
++                android:text="♾️\nBoomerang"
++                android:textSize="14sp" />
++
++            <TextView
++                android:layout_marginStart="10dp"
++                android:layout_width="100dp"
++                android:layout_height="70dp"
++                android:gravity="center"
++                android:background="@drawable/edittext_bg"
++                android:text="+\nMẫu"
++                android:textSize="14sp" />
++
++            <LinearLayout
++                android:layout_marginStart="10dp"
++                android:layout_width="100dp"
++                android:layout_height="70dp"
++                android:orientation="vertical"
++                android:background="@drawable/edittext_bg"
++                android:gravity="center">
++
++                <ImageView
++                    android:layout_width="28dp"
++                    android:layout_height="28dp"
++                    android:src="@drawable/instagram"
++                    android:layout_gravity="center" />
++
++                <TextView
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:text="Instagram"
++                    android:textSize="12sp"
++                    android:textColor="#000" />
++            </LinearLayout>
++        </LinearLayout>
++    </HorizontalScrollView>
++
++
++    <LinearLayout
++        android:layout_marginTop="14dp"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:gravity="center_vertical"
++        android:orientation="horizontal">
++
++        <TextView
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:text="Thư viện ảnh"
++            android:textColor="#000"
++            android:textStyle="bold"
++            android:textSize="15sp" />
++
++        <ImageView
++            android:layout_marginStart="6dp"
++            android:layout_width="18dp"
++            android:layout_height="18dp"
++            android:src="@drawable/down" />
++
++        <LinearLayout
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="12dp"
++            android:orientation="horizontal"
++            android:layout_gravity="end">
++
++            <ImageView
++                android:layout_marginStart="120dp"
++                android:layout_width="18dp"
++                android:layout_height="18dp"
++                android:src="@drawable/search" />
++
++            <ImageView
++                android:layout_marginStart="16dp"
++                android:layout_width="18dp"
++                android:layout_height="18dp"
++                android:src="@drawable/image" />
++
++            <TextView
++                android:layout_marginStart="4dp"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="Chọn nhiều file"
++                android:textColor="#000"
++                android:textStyle="bold"
++                android:textSize="13sp" />
++        </LinearLayout>
++    </LinearLayout>
++
++</LinearLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Thông báo"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imgOption1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/option"/>
+
+            <ImageView
+                android:id="@+id/imgSearch"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/search"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mới"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/layoutNotif1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/img14"
+                android:background="@drawable/circle_shape"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Nguyen thi thuy bình luận về bài viết của bạn"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/option"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginStart="72dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7 giờ"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hôm nay"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:id="@+id/layoutNotif2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/img15"
+                android:background="@drawable/circle_shape"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Nguyen van anh bình luận về bài viết của bạn"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/imgOption2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/option"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutNotif3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/img16"
+                android:background="@drawable/circle_shape"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="giang a pao bình luận về bài viết của bạn"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/option"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trước đó"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/layoutNotif4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/img18"
+                android:background="@drawable/circle_shape"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="giang a su bình luận về bài viết của bạn"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/option"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Xem thông báo trước đó"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/edittext_bg"/>
+    </LinearLayout>
+</ScrollView>

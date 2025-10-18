@@ -1,4 +1,4 @@
-package com.example.facebook; // ⚠️ Đổi thành package của bạn
+package com.example.facebook;
 
 import android.os.Bundle;
 import android.text.Editable;

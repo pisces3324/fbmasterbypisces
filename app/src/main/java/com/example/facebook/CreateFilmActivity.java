@@ -1,5 +1,4 @@
 package com.example.facebook;
-
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -14,25 +13,19 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-
 public class CreateFilmActivity extends AppCompatActivity {
-
     private static final int REQUEST_VIDEO_CAPTURE = 1;
     private static final int REQUEST_PICK_VIDEO = 2;
     private static final int REQUEST_PERMISSION = 100;
-
     ImageView btnExit, imgSetting;
     LinearLayout cameraLayout, musicLayout, sampleLayout, savedLayout,
             draftLayout, effectLayout, greenScreenLayout;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_film);
-
         btnExit = findViewById(R.id.btn_exit);
         imgSetting = findViewById(R.id.imgsetting);
-
         cameraLayout = findViewById(R.id.cameraLayout);
         musicLayout = findViewById(R.id.musicLayout);
         sampleLayout = findViewById(R.id.sampleLayout);
@@ -40,9 +33,7 @@ public class CreateFilmActivity extends AppCompatActivity {
         draftLayout = findViewById(R.id.draftLayout);
         effectLayout = findViewById(R.id.effectLayout);
         greenScreenLayout = findViewById(R.id.greenScreenLayout);
-
         btnExit.setOnClickListener(v -> finish());
-
         imgSetting.setOnClickListener(v ->
                 Toast.makeText(this, "Mở cài đặt thước phim", Toast.LENGTH_SHORT).show()
         );
@@ -72,7 +63,6 @@ public class CreateFilmActivity extends AppCompatActivity {
                 != PackageManager.PERMISSION_GRANTED ||
                 ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE)
                         != PackageManager.PERMISSION_GRANTED) {
-
             ActivityCompat.requestPermissions(this,
                     new String[]{Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE},
                     REQUEST_PERMISSION);

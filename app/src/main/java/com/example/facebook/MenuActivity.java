@@ -8,23 +8,16 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MenuActivity extends AppCompatActivity {
-
     ImageView imgSettings, imgSearch, imgUser;
     TextView tvUsername, tvSaved, tvFriends, tvMovies, tvFeed, tvLogout;
-
     LinearLayout tvHelp, tvPrivacy;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-
-
         imgSettings = findViewById(R.id.imgSettings);
         imgSearch = findViewById(R.id.imgSearch);
         imgUser = findViewById(R.id.imgUser);
-
         tvUsername = findViewById(R.id.tvUsername);
         tvSaved = findViewById(R.id.tvSaved);
         tvFriends = findViewById(R.id.tvFriends);
@@ -33,10 +26,7 @@ public class MenuActivity extends AppCompatActivity {
         tvHelp = findViewById(R.id.tvHelp);
         tvPrivacy = findViewById(R.id.tvPrivacy);
         tvLogout = findViewById(R.id.tvLogout);
-
-
         tvUsername.setText("Nguyễn Văn A");
-
         imgUser.setOnClickListener(v ->{
             Intent intent = new Intent(MenuActivity.this, ProfileActivity.class);
             startActivity(intent);
@@ -46,7 +36,6 @@ public class MenuActivity extends AppCompatActivity {
             Intent intent = new Intent(MenuActivity.this, SettingsActivity.class);
             startActivity(intent);
         });
-
         imgSearch.setOnClickListener(v -> {
 
             Intent intent = new Intent(MenuActivity.this, SearchActivity.class);
